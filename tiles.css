@@ -1,0 +1,16 @@
+#image-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+.kachel{
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 2px 4px gray;
+    flex: 0 1 auto;
+    
+
+}

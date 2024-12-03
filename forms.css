@@ -1,0 +1,46 @@
+form input:invalid {
+    border-color: red;
+}
+
+.required::after {
+    content: " (Erforderliches Feld)";
+    font-size: small;
+}
+
+main {
+    background-color: #f4ecf7;
+}
+
+main {
+    border-radius: 15px;
+}
+
+legend {
+    background-color: #7fb3d5;
+    color: white;
+    border-radius: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+fieldset {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+inpu:optional {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input:required {
+    border-top: none;
+
+    border-right: none;
+}

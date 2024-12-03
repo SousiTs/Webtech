@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/flexbox.css">
+  <link rel="stylesheet" href="assets/css/tiles.css">
+  <title>Tutorial-App</title>
+</head>
+
+<body>
+  <header>
+    <img
+      src="https://img.freepik.com/vektoren-premium/koch-logo-kochen-kueche-symbol-vektor-kochmuetze-symbol-logo_393879-430.jpg"
+      alt="Logo" width="50" height="50">
+    <h1>Tutorial-App</h1>
+  </header>
+  <nav>
+    <a href="./list.html">Liste der Kategorien</a> |
+    <a href="./tutorials.html">Tutorials der Kategorie "Backen"</a> |
+    <a href="./tutorial.html">Details zum Tutorial "Crepes"</a> |
+    <a href="./form.html">Tutorial anlegen</a>
+  </nav>
+  <div id="container">
+    <main>
+      <div class="main">
+      <form action="https://labs.inf.fh-dortmund.de/tutorialService/testTutorialSearch.php" method="GET">
+        <label for="search">Suchbegriff:</label>
+        <input type="text" name="search" id="search" placeholder="Eine Sucheingabe" minlength="4" maxlength="20"
+          pattern="^[A-Z].{3,19}$" required>
+        <button type="submit">Suchen!</button>
+      </form>
+      <h2>Tutorials</h2>
+
+      <div id="image-container">
+        <div class="kachel">
+          <a href="./tutorials.html"><img src="https://www.badenova.de/blog/content/images/2021/12/diy.jpg" alt="DIY"
+              width="200" height="150"></a><br>
+           <a href="./tutorials.html">DIY</a>
+        </div>
+        <div class="kachel">
+          <a href="./tutorials.html"><img
+              src="https://www.aiafood.com/_next/image?url=https%3A%2F%2Fbackoffice.aiafood.com%2Fuploads%2Fxxl_10_segreti_cucinare_velocemente_e_preparare_cene_da_veri_chef_aa0c185e36.webp&w=1920&q=80"
+              alt="DIY" width="200" height="150"></a><br>
+              <a href="./tutorials.html">Kochen</a>
+        </div>
+        <div class="kachel">
+          <a href="./tutorials.html"><img
+              src="https://www.gofeminin.de/wp-content/uploads/sites/2/2023/01/2052540_w1200cxt0cyt0cxb2119cyb1414.jpg"
+              alt="DIY" width="200" height="150"></a><br>
+              <a href="./tutorials.html">Backen</a>
+        </div>
+        <div class="kachel">
+          <a href="./tutorials.html"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNxwXzJPUqr_4HCGrEvuKYFCzvs6MVyThyzA&s"
+              alt="DIY" width="200" height="150"></a><br>
+              <a href="./tutorials.html">Programmieren</a>
+        </div>
+      </div>
+     
+    </div>
+    </main>
+    
+    <div class="zusatz">
+    <aside>
+      <h3>Neue Tutorials</h3>
+      <ul>
+        <li>Cheesecake, 16.07.2024, Dauer: 1 Std. 20 Min.</li>
+        <li>Schokokuchen, 22.08.2024, Dauer: 1 Std. 0 Min.</li>
+      </ul>
+    </aside>
+  </div>
+  </div>
+  <footer>
+    <small> &copy; by WebTech Inc.</small>
+  </footer>
+</body>
+</html>

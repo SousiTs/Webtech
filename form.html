@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Tutorial-App</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/forms.css" />
+    <link rel="stylesheet" href="assets/css/grid.css" />
+  </head>
+
+  <body>
+    <div id="container">
+    <header>
+      <img
+        src="https://img.freepik.com/vektoren-premium/koch-logo-kochen-kueche-symbol-vektor-kochmuetze-symbol-logo_393879-430.jpg"
+        alt="Logo"
+        width="50"
+        height="50"
+      />
+      <h1>Tutorial-App</h1>
+    </header>
+    <nav>
+      <a href="./list.html">Liste der Kategorien</a> |
+      <a href="./tutorials.html">Tutorials der Kategorie "Backen"</a> |
+      <a href="./tutorial.html">Details zum Tutorial "Crepes"</a> |
+      <a href="./form.html">Tutorial anlegen</a>
+    </nav>
+    <br />
+    <main>
+      <form
+        action="https://labs.inf.fh-dortmund.de/tutorialService/testCreateTutorial.php"
+        method="POST"
+      >
+        <h2>Tutorial anlegen:</h2>
+        <fieldset>
+          <legend>Tutorialinformationen</legend>
+
+          <div class="required">
+            <label for="name"><strong>Titel:</strong></label>
+            <input
+              id="name"
+              size="40"
+              type="text"
+              name="name"
+              placeholder="Titel eingeben"
+              minlength="4"
+              maxlength="20"
+              pattern="^[A-Z].{3,19}$"
+              required
+            />
+          </div>
+
+          <div class="required">
+            <label for="language"><strong>Sprache:</strong></label>
+            <select id="language" name="language">
+              <option value="-">-</option>
+              <option value="de">Deutsch</option>
+              <option value="en">Englisch</option>
+              <option value="es">Spanisch</option>
+              <option value="fr">Französisch</option>
+            </select>
+          </div>
+
+          <div class="required">
+            <label for="categories"> <strong>Kategorie(n)</strong></label>
+            <input
+              id="categories"
+              size="40"
+              name="categories"
+              placeholder="Kategorien auswählen"
+              pattern=".*[^,]$"
+              required
+            />
+          </div>
+
+          <label for="description"><strong>Beschreibung</strong></label
+          ><br />
+          <textarea
+            id="description"
+            name="description"
+            cols="32"
+            rows="8"
+            minlength="40"
+            placeholder="Beschreibung angeben"
+          ></textarea
+          ><br />
+        </fieldset>
+        <fieldset>
+          <legend>Zusätzliche Informationen</legend>
+          <div class="required">
+            <label for="duration"><strong>Dauer</strong></label>
+            <input
+              id="duration"
+              name="duration"
+              type="time"
+              value=""
+              min="00:20"
+              max="15:59"
+              required
+            />
+          </div>
+
+          <label for="date"><strong>Veröffentlichung </strong></label>
+          <input id="date" name="date" type="date" value="" required /><br />
+
+          <strong>Typ bitte auswählen:</strong><br />
+
+          <input type="radio" name="type" value="text" />Text<br />
+          <input type="radio" name="type" value="video" />Video<br />
+
+          <label for="type+content"><strong>Inhalt</strong></label
+          ><br />
+          <input
+            id="type+content"
+            size="40"
+            name="content"
+            placeholder="URL oder Code eingeben"
+            required
+          /><br />
+
+          <input type="submit" value="Absenden" />
+        </fieldset>
+      </form>
+    </main>
+    <aside>
+      <h3>Neue Tutorials</h3>
+      <ul>
+        <li>Cheesecake, 16.07.2024, Dauer: 1 Std. 20 Min.</li>
+        <li>Schokokuchen, 22.08.2024, Dauer: 1 Std. 0 Min.</li>
+      </ul>
+    </aside>
+    <hr />
+    <footer>
+      <small> &copy; by WebTech Inc.</small>
+    </footer>
+    </div>
+  </body>
+</html>

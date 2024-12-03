@@ -1,0 +1,66 @@
+h1 {
+    color: #6c3483;
+    font-style: normal;
+}
+
+h2 {
+    color: #5dade2;
+    font-style: normal;
+}
+
+h3 {
+    color: #c2185b;
+    font-style: normal;
+}
+
+aside,
+nav {
+    background-color: #e0e6fd;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e0e6fd;
+}
+
+thead {
+    background-color: #eae0fd;
+}
+
+tfoot {
+    background-color: #eae0fd;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav,
+aside {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px;
+}
+
+nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+body {
+    font-family: Helvetica, Arial, Verdana;
+}
+
+.tutorials-image {
+    float: left;
+    margin-right: 20px;
+
+}
+
+.tutorial-image {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
